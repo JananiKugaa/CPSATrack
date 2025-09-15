@@ -1,7 +1,7 @@
 # CPSATrack
 [Transformer Tracking with Context-Aware Token Pruning and Selective Attention]()
 
-[[Models]()][[Raw Results]()]
+[[Models](https://drive.google.com/drive/folders/10yHQd_nhFBfQFRKDKdFejN-MoXPnVLoM?usp=sharing)][[Raw Results](https://drive.google.com/drive/folders/1PsQh4BUgwIgpGQWbPBgxGb-6pIBfX3dq?usp=sharing)]
 
 ## Environment
   Our experiments are conducted with Ubuntu 18.04.6 and CUDA 11.4 (python=3.8).
@@ -59,7 +59,7 @@
 
 ## Evaluation
 
-- Make sure you have prepared the trained model or download the model weights from [Google Drive]() (Put the downloaded weights on `$PROJECT_ROOT$/output/checkpoints/train/CPSATrack`)
+- Make sure you have prepared the trained model or download the model weights from [Google Drive](https://drive.google.com/drive/folders/10yHQd_nhFBfQFRKDKdFejN-MoXPnVLoM?usp=sharing) (Put the downloaded weights on `$PROJECT_ROOT$/output/checkpoints/train/CPSATrack`)
   - GOT10K-test
     ```
     python tracking/test.py CPSATrack vitb_256_mae_ce_got10k --dataset got10k_test --threads 0 --num_gpus 1
