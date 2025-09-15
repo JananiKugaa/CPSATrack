@@ -124,7 +124,6 @@ class CPSATrack(BaseTracker):
                 self.z_dict_list.append(template_t.tensors)
                 dynamic_bbox = self.transform_bbox_to_crop(self.state, resize_factor_dynamic,
                                                            template_t.tensors.device).squeeze(1)
-                print(dynamic_bbox)
                 self.learn_box_mask_z[1] = generate_mask_cond(self.cfg, 1, template_t.tensors.device, dynamic_bbox)
 
         # for debug
